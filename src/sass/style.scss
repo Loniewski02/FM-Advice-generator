@@ -1,0 +1,95 @@
+@use './colors' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Manrope', sans-serif;
+	background-color: $dark-blue;
+	font-size: 1.6rem;
+}
+
+.main {
+	padding: 1em;
+}
+
+.app {
+	position: relative;
+	margin: 0 auto;
+	padding: 2.5em 1.5em;
+	width: min-content;
+	text-align: center;
+	background-color: $dark-grayish-blue;
+	border-radius: 10px;
+
+	&__title {
+		color: $neon-green;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	&__text {
+		margin: 1.1em 0;
+		color: $light-cyan;
+		font-size: 2.4rem;
+	}
+
+	&__img {
+		margin-bottom: 1.5em;
+	}
+
+	&__dice {
+		position: absolute;
+		left: 50%;
+		bottom: -9%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.2em;
+		width: min-content;
+		height: min-content;
+		background-color: $neon-green;
+		border-radius: 50%;
+		transition: box-shadow 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0px 0px 30px $neon-green;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.app {
+		padding: 3em;
+		border-radius: 15px;
+
+		&__title {
+			font-size: 1.3rem;
+		}
+
+		&__text {
+			margin: 0.8em 0 1.4em;
+			font-size: 2.8rem;
+		}
+
+		&__img {
+			content: url('../img/icons/pattern-divider-desktop.svg');
+		}
+	}
+}
