@@ -22,6 +22,14 @@ body {
 	font-size: 1.6rem;
 }
 
+.shake {
+	animation: shake 1s;
+}
+
+.rotate {
+	animation: rotate 1s;
+}
+
 .main {
 	padding: 1em;
 }
@@ -104,29 +112,21 @@ body {
 	}
 }
 
-.shake {
-	animation: shake 1s;
-}
-
-.rotate {
-	animation: rotate 1s;
-}
-
 @keyframes shake {
 	0% {
 		left: 50%;
 	}
 	20% {
-		left: 55%;
+		left: 52%;
 	}
 	40% {
-		left: 40%;
+		left: 48%;
 	}
 	60% {
-		left: 55%;
+		left: 51%;
 	}
 	80% {
-		left: 45%;
+		left: 47%;
 	}
 	100% {
 		left: 50%;
