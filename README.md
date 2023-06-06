@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Loniewski02/FM-Advice-generator)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/html-sass-js-advice-generator-app-MDTcEt-3RN)
 - Live Site URL: [Live](https://loniewski02.github.io/FM-Advice-generator/)
 
 ## My process
